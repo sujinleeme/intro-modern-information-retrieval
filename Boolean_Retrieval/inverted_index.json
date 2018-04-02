@@ -1,0 +1,40 @@
+{
+  "approach": [
+    "doc3"
+  ], 
+  "breakthrough": [
+    "doc1"
+  ], 
+  "drug": [
+    "doc1", 
+    "doc2"
+  ], 
+  "for": [
+    "doc1", 
+    "doc3", 
+    "doc4"
+  ], 
+  "hopes": [
+    "doc4"
+  ], 
+  "new": [
+    "doc2", 
+    "doc3", 
+    "doc4"
+  ], 
+  "of": [
+    "doc3"
+  ], 
+  "patients": [
+    "doc4"
+  ], 
+  "schizophrenia": [
+    "doc1", 
+    "doc2", 
+    "doc3", 
+    "doc4"
+  ], 
+  "treatment": [
+    "doc3"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "approach": {
+    "doc1": 0, 
+    "doc2": 0, 
+    "doc3": 1, 
+    "doc4": 0
+  }, 
+  "breakthrough": {
+    "doc1": 1, 
+    "doc2": 0, 
+    "doc3": 0, 
+    "doc4": 0
+  }, 
+  "drug": {
+    "doc1": 1, 
+    "doc2": 1, 
+    "doc3": 0, 
+    "doc4": 0
+  }, 
+  "for": {
+    "doc1": 1, 
+    "doc2": 0, 
+    "doc3": 1, 
+    "doc4": 1
+  }, 
+  "hopes": {
+    "doc1": 0, 
+    "doc2": 0, 
+    "doc3": 0, 
+    "doc4": 1
+  }, 
+  "new": {
+    "doc1": 0, 
+    "doc2": 1, 
+    "doc3": 1, 
+    "doc4": 1
+  }, 
+  "of": {
+    "doc1": 0, 
+    "doc2": 0, 
+    "doc3": 1, 
+    "doc4": 0
+  }, 
+  "patients": {
+    "doc1": 0, 
+    "doc2": 0, 
+    "doc3": 0, 
+    "doc4": 1
+  }, 
+  "schizophrenia": {
+    "doc1": 1, 
+    "doc2": 1, 
+    "doc3": 1, 
+    "doc4": 1
+  }, 
+  "treatment": {
+    "doc1": 0, 
+    "doc2": 0, 
+    "doc3": 1, 
+    "doc4": 0
+  }
+}
