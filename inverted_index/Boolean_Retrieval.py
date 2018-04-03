@@ -28,8 +28,9 @@ class Boolean_Retrieval():
 
   # building an index by sorting adnd grouping 
   def get_word_group_list(self):
-    word = [value._wordlist for key, value in self._docs.items()] 
+    word = [value._wordlist for key, value in self._docs.items()]
     word = set(sum(word, []))
+    #print(word)
     self._dictionary = sorted(word, reverse=False)
 
   # make dictionary format to set document Id to store word counting results
@@ -37,6 +38,7 @@ class Boolean_Retrieval():
     init_doc_id = dict([(re.findall(r'[ \w-]+?(?=\.)', key)[0]
                       , 0) for key in self._docs.keys()])
     dictionary = dict([(key, init_doc_id) for key in self._dictionary])
+    print(dictionary)
     self._incidence_matrix = sortByKeys(dictionary)
   
   def search_word(self, filename):

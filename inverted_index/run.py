@@ -30,14 +30,6 @@ matrix.set_inverted_index()
 incidence_matrix = json.dumps(matrix._incidence_matrix, sort_keys=True, indent=2)
 inverted_index = json.dumps(matrix._inverted_index, sort_keys=True, indent=2)
 
-
-print(matrix._incidence_matrix)
-print(matrix._inverted_index)
-
-print(incidence_matrix)
-print("="*100)
-print(inverted_index)
-
 # save Files
 with open("incidence_matrix.json", "w") as f:
   try:
