@@ -10,13 +10,13 @@ class Test_Jaccard_Index(unittest.TestCase):
         self.assertEqual(res, 0.25)
 
     def test_case_2(self):
-        first_str = list("my home town is seoul, South Korea.")
-        second_str = list("where is your home town?")
+        first_str = "My home town is seoul, south Korea.".lower()
+        second_str = "Where is your home town?".lower()
         k_gram = 2
-        first_set = ngrams_split(first_str, k_gram)
-        second_set = ngrams_split(second_str, k_gram)
+        first_set = ngrams_split(list(first_str), k_gram)
+        second_set = ngrams_split(list(second_str), k_gram)
         res = JI.main(first_set, second_set)
-        self.assertEqual(res, 0.359)
+        self.assertEqual(res, 0.368)
 
 
 def ngrams_split(lst, n):
