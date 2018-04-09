@@ -10,6 +10,14 @@ class Test_Jaccard_Index(unittest.TestCase):
         self.assertEqual(res, 0.25)
 
     def test_case_2(self):
+        first_str = "ides of March".lower().split()
+        second_str = "“Caesar died in March".lower().split()
+        first_set = set(first_str)
+        second_set = set(second_str)
+        res = JI.main(first_set, second_set)
+        self.assertEqual(res, 0.167)
+
+    def test_case_3(self):
         first_str = "My home town is seoul, south Korea.".lower()
         second_str = "Where is your home town?".lower()
         k_gram = 2
