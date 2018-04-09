@@ -1,15 +1,15 @@
-import Boolean_Retrieval
-import pprint
+from Document_Matrix import Document_Matrix
 import json
 
 # Crete New Instance
-matrix = Boolean_Retrieval.Boolean_Retrieval()
+matrix = Document_Matrix()
 
 # Input document collections
 doc1 = matrix.add_documents('documents/doc1.txt')
 doc2 = matrix.add_documents('documents/doc2.txt')
 doc3 = matrix.add_documents('documents/doc3.txt')
 doc4 = matrix.add_documents('documents/doc4.txt')
+
 
 # merge word group list
 matrix.get_word_group_list()
