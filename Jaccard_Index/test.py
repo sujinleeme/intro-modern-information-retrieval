@@ -1,17 +1,27 @@
-def jaccard_index(first_set, second_set):
-    # If both sets are empty, jaccard index is defined to be 1
-
-    index = 1.0
-    if first_set or second_set:
-        index = float(len(first_set.intersection(second_set)))/len(first_set.union(second_set))
-        return index
+import unittest
+import jaccard_index as JI
 
 
-first_set = set(range(10))
-second_set = set(range(5, 20))
-index = jaccard_index(first_set, second_set)
-print(index) # 0.25 as 5/20
+class Test_Jaccard_Index(unittest.TestCase):
+    def test_case_1(self):
+        first_set = set(range(10))
+        second_set = set(range(5, 20))
+        res = JI.main(first_set, second_set)
+        self.assertEqual(res, 0.25)
+
+    def test_case_2(self):
+        first_str = list("my home town is seoul, South Korea.")
+        second_str = list("where is your home town?")
+        k_gram = 2
+        first_set = ngrams_split(first_str, k_gram)
+        second_set = ngrams_split(second_str, k_gram)
+        res = JI.main(first_set, second_set)
+        self.assertEqual(res, 0.359)
 
 
+def ngrams_split(lst, n):
+    return set([''.join(lst[i:i + n]) for i in range(len(lst) - n)])
 
 
+if __name__ == '__main__':
+    unittest.main()
