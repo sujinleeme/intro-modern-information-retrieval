@@ -1,0 +1,31 @@
+ham
+On Monday, April 09, 2007 3:23 PM, someone named Wilfred wrote:
+
+> So what's the big deal about S using files instead of memory
+> like R. I don't get the point. Isn't there enough swap space
+> for S? (Who cares anyway: it works, isn't it?) Or are there
+> any problems with S and large datasets? I don't get it. You
+> use them, Greg. So you might discuss that issue.
+
+S's one-to-one correspondence between S objects and filesystem
+objects is the single remaining reason I haven't completely
+converted over to R.  With S I can manage my objects via
+makefiles.  Corrections to raw data or changes to analysis
+scripts get applied to all objects in the project (and there
+are often thousands of them) by simply typing 'make'.  That
+includes everything right down to the graphics that will go
+in the report.
+
+How do people live without that?
+
+--Todd
+-- 
+Why is 'abbreviation' such a long word?
+
+______________________________________________
+R-help@stat.math.ethz.ch mailing list
+https://stat.ethz.ch/mailman/listinfo/r-help
+PLEASE do read the posting guide http://www.R-project.org/posting-guide.html
+and provide commented, minimal, self-contained, reproducible code.
+
+
