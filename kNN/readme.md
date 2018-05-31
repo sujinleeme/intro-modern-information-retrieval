@@ -22,22 +22,19 @@ document vectors.
 * (e) The main program now should be able to take the number of next neighbors `k` when assigning the test set documents to a class. Then it should perform kNN classification with the given `k`.
 
 # How to run
-Open command line and git clone this repo.
 This program must be executed with three arguments: the folder
 containing the training files; the test file; and k. 
 
-Run this command:
 ```
 $ python3 knn.py [test_folder] [test_file_1] [k_value]
 ```
 
-## Example
-* Input
+For an example, run this command:
 ```
 python3 knn.py train 00000.txt 6     
 ```
 
-* Output
+You should see output such as this:
 ```
 train 00000.txt 6
 
