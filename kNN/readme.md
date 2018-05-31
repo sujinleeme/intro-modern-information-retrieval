@@ -1,4 +1,5 @@
 # Simple kNN classifier
+* python3
 
 This is a simple kNN classifier, which asks the user for a k and then assigns a class to new documents.
 
@@ -11,29 +12,32 @@ Here is my problem. I’m trying to export this data to SQL database.
 […]
 ```
 
-## Implementation
-(a) Omit the stop words listed in `stopwords.txt `. 
-(b) Use the tf-idf weighting for the vector values.
-(c) Normalize the vectors to unit vectors. Save the
+## How it works
+* (a) Omit the stop words listed in `stopwords.txt `. 
+* (b) Use the tf-idf weighting for the vector values.
+* (c) Normalize the vectors to unit vectors. Save the
 information about the class of a document while it is processed.
-(c) Write a method to calculate the Euclidean distance between two
+* (d) Write a method to calculate the Euclidean distance between two
 document vectors.
-(e) The main program now should be able to take the number of next neighbors (k) when assigning the test set documents to a class. Then it should perform kNN classification with the given k.
+* (e) The main program now should be able to take the number of next neighbors `k` when assigning the test set documents to a class. Then it should perform kNN classification with the given `k`.
 
 # How to run
+Open command line and git clone this repo.
 This program must be executed with three arguments: the folder
 containing the training files; the test file; and k. 
 
+Run this command:
 ```
-python3 knn.py [test_folder] [test_file_1] [k_value]
+$ python3 knn.py [test_folder] [test_file_1] [k_value]
 ```
 
 ## Example
+* Input
 ```
 python3 knn.py train 00000.txt 6     
 ```
 
-example
+* Output
 ```
 train 00000.txt 6
 
