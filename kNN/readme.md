@@ -21,7 +21,7 @@ information about the class of a document while it is processed.
 document vectors.
 * (e) The main program now should be able to take the number of next neighbors `k` when assigning the test set documents to a class. Then it should perform kNN classification with the given `k`.
 
-# How to run
+## How to run
 This program must be executed with three arguments: the folder
 containing the training files; the test file; and k. 
 
